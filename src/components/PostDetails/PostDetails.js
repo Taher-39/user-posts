@@ -23,15 +23,15 @@ const PostDetails = () => {
         <div className='details'>
             <h1 className='text-center text-2xl font-semibold py-6'>Post Detail</h1>
             <div className='px-10'>
-                <div class="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl">
-                    <div class="md:flex">
-                        <div class="md:flex-shrink-0">
-                            <img class="h-48 w-full object-cover md:h-full md:w-48" src={detailsImg} alt="CommentImg" />
+                <div className="max-w-lg mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-4xl">
+                    <div className="md:flex">
+                        <div className="md:flex-shrink-0">
+                            <img className="h-48 w-full object-cover md:h-full md:w-48" src={detailsImg} alt="CommentImg" />
                         </div>
-                        <div class="p-8">
-                            <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Post-Id: {postDetail.userId}</div>
-                            <p class="mt-1 text-lg leading-tight font-medium text-black">Name: {postDetail.title}</p>
-                            <p class="mt-2 text-gray-500 border-left">{postDetail.body}</p>
+                        <div className="p-8">
+                            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Post-Id: {postDetail.userId}</div>
+                            <p className="mt-1 text-lg leading-tight font-medium text-black">Name: {postDetail.title}</p>
+                            <p className="mt-2 text-gray-500 border-left">{postDetail.body}</p>
                         </div>
                     </div>
                 </div>
@@ -41,16 +41,16 @@ const PostDetails = () => {
                 <div>
                     {
                         userPostComments.map(item => <div key={item.id} className='my-6'>
-                            <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-                                <div class="md:flex">
-                                    <div class="md:flex-shrink-0">
-                                        <img class="h-48 w-full object-cover md:h-full md:w-48" src={commentImg} alt="CommentImg" />
+                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                <div className="md:flex">
+                                    <div className="md:flex-shrink-0">
+                                        <img className="h-48 w-full object-cover md:h-full md:w-48" src={commentImg} alt="CommentImg" />
                                     </div>
-                                    <div class="p-8">
-                                        <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Post-Id: {item.postId}</div>
-                                        <p class="mt-1 text-lg leading-tight font-medium text-black hover:underline">Name: {item.name}</p>
-                                        <p class="mt-1 text-lg leading-tight font-medium text-black">Email: {item.email}</p>
-                                        <p class="mt-2 text-gray-500 border-left">{item.body}</p>
+                                    <div className="p-8">
+                                        <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Post-Id: {item.postId}</div>
+                                        <p className="mt-1 text-lg leading-tight font-medium text-black hover:underline">Name: {item.name}</p>
+                                        <p className="mt-1 text-lg leading-tight font-medium text-black">Email: {item.email}</p>
+                                        <p className="mt-2 text-gray-500 border-left">{item.body}</p>
                                     </div>
                                 </div>
                             </div>

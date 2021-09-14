@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PostsCard from './PostsCard';
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 const Posts = () => {
     const [posts, setPosts] = useState([]);
@@ -14,6 +15,9 @@ const Posts = () => {
                 {
                     posts.map(item => <PostsCard key={item.id} postsData={item} />)
                 }
+            </div>
+            <div className='back-btn'>
+                <a className='text-white back-link' href='#' ><FaArrowAltCircleUp className='icon' /></a>
             </div>
         </div>
     );

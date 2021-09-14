@@ -8,6 +8,11 @@
     background: linear-gradient(to right, rgb(54, 51, 48), rgb(100, 124, 139));
     color: white;
 }
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding-left: 100px;
+  }
+}
 /* nav style end */
 
 /* home style start */
@@ -41,5 +46,19 @@
 
 .btn:active {
   transform: translateY(-3px);
+}
+.back-btn{
+  position: relative;
+}
+.back-link{
+  background-color: lightsalmon;
+  padding: 15px;
+  border-radius: 50%;
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+}
+.icon{
+  font-size: 1.3rem;
 }
 /* button style end */

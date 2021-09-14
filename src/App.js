@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Switch>posts
+      <Switch>
         <Route path='/posts/:id'>
           <PostDetails />
         </Route>
